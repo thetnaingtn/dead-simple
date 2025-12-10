@@ -27,5 +27,5 @@ func main() {
 	mux.HandleFunc("/hello", helloHandler)
 
 	log.Printf("The server now start listening")
-	log.Fatal(http.ListenAndServe(":", mux))
+	log.Fatal(http.ListenAndServe(":8080", mux))
 }
