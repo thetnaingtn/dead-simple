@@ -10,7 +10,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 	resp := struct {
 		Message string `json:"message"`
 	}{
-		Message: "Hello World!!",
+		Message: "You see this changes because ArgoCD update me",
 	}
 
 	bytes, err := json.Marshal(resp)
